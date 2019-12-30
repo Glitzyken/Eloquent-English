@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./scss/vars";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  background-color: $color-heading;
+}
