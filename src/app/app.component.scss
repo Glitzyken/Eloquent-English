@@ -1,6 +1,16 @@
+@import "../scss/vars";
+
+.body {
+  box-sizing: border-box;
+  background-color: $color-bg;
+  color: $color-heading;
+  padding-bottom: 3rem;
+}
+
 .container {
   width: 60%;
   margin: auto;
-  // background-color: red;
   text-align: center;
+  background-color: $color-bg;
+  color: $color-heading;
 }
