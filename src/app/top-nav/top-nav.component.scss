@@ -6,6 +6,8 @@
   display: flex;
   justify-content: center;
   transition: all 0.2s;
+  color: $color-heading;
+  background-color: $color-bg;
 
   &_item {
     margin-right: 1rem;
