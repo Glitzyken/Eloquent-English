@@ -1,0 +1,53 @@
+@import "../../scss/vars";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+
+  &__logo {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    width: 200px;
+    height: auto;
+  }
+
+  &__side-nav {
+    padding: 1rem;
+    width: 320px;
+    height: 100vh;
+    background-color: $color-background;
+    grid-column: 1 / 2;
+    position: fixed;
+
+    &--list {
+      list-style-type: none;
+    }
+
+    &--heading {
+      margin-left: 1rem;
+      font-size: 1.1rem;
+      text-transform: capitalize;
+    }
+
+    &--chapter {
+      color: $color-bg;
+      font-size: 2rem;
+      margin-left: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__content {
+    grid-column: 2 / 3;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-bg;
+
+  &:hover {
+    color: $color-ipa;
+  }
+}
