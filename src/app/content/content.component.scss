@@ -1,0 +1,69 @@
+@import "../../scss/vars";
+
+.content {
+  &__section {
+    padding: 1rem;
+    padding: 3rem 8rem 3rem 8rem;
+
+    &--green {
+      background-color: $color-consonant1;
+      padding: 3rem 8rem 3rem 8rem;
+    }
+
+    &--dark {
+      background-color: $color-background;
+      padding: 3rem 8rem 3rem 8rem;
+    }
+  }
+
+  &__h1-onColorGreen {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: $color-background;
+    margin-bottom: 2.5rem;
+  }
+
+  &__h1-onColorWhite {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: $color-heading;
+    margin-bottom: 2.5rem;
+  }
+
+  &__h1-onColorDark {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color: $color-consonant2;
+    margin-bottom: 2.5rem;
+  }
+
+  &__h2 {
+    text-transform: uppercase;
+    color: $color-subheading;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    &--par {
+      font-size: 1.5rem;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__par {
+    font-size: 1.5rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__img {
+    width: 200px;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

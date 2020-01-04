@@ -15,6 +15,7 @@ a {
 .wrapper {
   display: grid;
   grid-template-columns: 320px 1fr;
+  // grid-template-rows: 320px 1fr;
 
   &__logo {
     margin-top: 0.5rem;

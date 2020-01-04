@@ -6,9 +6,18 @@ h2 {
   font-size: 2.5rem;
 }
 
-// Wrap all the contents in one. Add to enable some more gap between the top nav and content
+// All contents are wrapped into one container
 .wrapper {
-  margin-top: 4rem;
+  background-color: $color-bg;
+  color: $color-heading;
+  text-align: center;
+  padding: 1rem;
+
+  &__container {
+    width: 60%;
+    margin: auto;
+    padding-top: 10rem;
+  }
 }
 
 .book-cover {
@@ -36,19 +45,19 @@ a {
   &:link,
   &:visited {
     text-transform: uppercase;
-    padding: 1rem 3rem;
+    padding: 1.5rem 3.5rem;
     margin-bottom: 2rem;
-
+    border: none;
     border-radius: 10rem;
-    border: 1px solid $color-heading;
-    background-color: $color-bg;
-    color: $color-heading;
+
+    background-color: $color-consonant1;
+    color: $color-background;
     transition: all 0.2s;
     cursor: pointer;
   }
 
   &:hover {
-    background-color: $color-heading;
+    background-color: $color-ipa;
     color: $color-bg;
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
