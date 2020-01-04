@@ -10,12 +10,12 @@
   color: $color-heading;
   background-color: $color-bg;
 
-  &_item {
+  &__item {
     margin-right: 1rem;
     align-self: center;
   }
 
-  &_link {
+  &__link {
     text-decoration: none;
     color: inherit;
 

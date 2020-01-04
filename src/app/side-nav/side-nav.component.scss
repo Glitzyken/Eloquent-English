@@ -1,5 +1,15 @@
 @import "../../scss/vars";
 
+a {
+  text-decoration: none;
+  color: $color-bg;
+
+  &:hover,
+  &:active {
+    color: $color-ipa;
+  }
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 320px 1fr;
@@ -40,14 +50,5 @@
 
   &__content {
     grid-column: 2 / 3;
-  }
-}
-
-a {
-  text-decoration: none;
-  color: $color-bg;
-
-  &:hover {
-    color: $color-ipa;
   }
 }
