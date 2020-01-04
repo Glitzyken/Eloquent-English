@@ -4,11 +4,17 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 import { HomePageComponent } from "./home-page/home-page.component";
 import { TopNavComponent } from "./top-nav/top-nav.component";
-import { ContentComponent } from './content/content.component';
-import { Chapter1Component } from './chapter1/chapter1.component';
+import { ContentsComponent } from "./contents/contents.component";
+import { Chapter1Component } from "./chapter1/chapter1.component";
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, TopNavComponent, ContentComponent, Chapter1Component],
+  declarations: [
+    AppComponent,
+    HomePageComponent,
+    TopNavComponent,
+    ContentsComponent,
+    Chapter1Component
+  ],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent]
