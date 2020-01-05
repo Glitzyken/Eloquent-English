@@ -1,5 +1,9 @@
 @import "./vars";
 
+//////////////////////////////////////////////
+/////// Global styling for all chapter components created
+////// This style sheet is exported to individual chapter component
+
 .column {
   display: grid;
   grid-template-columns: 320px 1fr;
@@ -71,10 +75,28 @@
     height: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+    &--ads {
+      width: 800px;
+      height: auto;
+      margin-top: 5rem;
+      margin-bottom: 1rem;
+    }
   }
 }
 
-li {
-  color: $color-bg;
-  font-size: 1.5rem;
+///////////////////////////////////////////////////////
+/////// List Styling
+
+.ul-darkBg {
+  &__li {
+    color: $color-bg;
+    font-size: 1.5rem;
+  }
+}
+
+.ul-whiteBg {
+  &__li {
+    font-size: 1.5rem;
+  }
 }
