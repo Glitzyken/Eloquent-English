@@ -1,5 +1,10 @@
 @import "./vars";
 
+.column {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+}
+
 .content {
   padding-bottom: 5rem;
   &__section {

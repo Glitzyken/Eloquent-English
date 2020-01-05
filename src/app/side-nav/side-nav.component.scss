@@ -1,0 +1,44 @@
+@import "../../scss/vars";
+
+a {
+  text-decoration: none;
+  color: $color-bg;
+
+  &:hover,
+  &:active {
+    color: $color-ipa;
+  }
+}
+
+.side-nav {
+  padding: 1rem;
+  width: 320px;
+  height: 100vh;
+  background-color: $color-background;
+  position: fixed;
+
+  &__logo {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    width: 200px;
+    height: auto;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__heading {
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+  }
+
+  &__chapter {
+    color: $color-bg;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
