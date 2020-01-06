@@ -13,16 +13,16 @@
   padding-bottom: 5rem;
   &__section {
     padding: 1rem;
-    padding: 3rem 8rem 3rem 8rem;
+    padding: 3rem 12rem 3rem 12rem;
 
     &--green {
       background-color: $color-consonant1;
-      padding: 3rem 8rem 3rem 8rem;
+      padding: 3rem 12rem 3rem 12rem;
     }
 
     &--dark {
       background-color: $color-background;
-      padding: 3rem 8rem 3rem 8rem;
+      padding: 3rem 12rem 3rem 12rem;
     }
   }
 
@@ -89,6 +89,8 @@
 /////// List Styling
 
 .ul-darkBg {
+  list-style-type: circle;
+
   &__li {
     color: $color-bg;
     font-size: 1.5rem;
@@ -96,6 +98,8 @@
 }
 
 .ul-whiteBg {
+  list-style-type: circle;
+
   &__li {
     font-size: 1.5rem;
   }
