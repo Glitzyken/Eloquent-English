@@ -97,6 +97,14 @@
   }
 }
 
+.ul-greenBg {
+  list-style-type: circle;
+
+  &__li {
+    font-size: 1.5rem;
+  }
+}
+
 .ul-whiteBg {
   list-style-type: circle;
 

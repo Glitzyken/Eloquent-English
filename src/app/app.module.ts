@@ -9,6 +9,7 @@ import { NextButtonComponent } from "./next-button/next-button.component";
 import { PrevButtonComponent } from "./prev-button/prev-button.component";
 import { Chapter2Component } from "./chapter2/chapter2.component";
 import { SideNavComponent } from "./side-nav/side-nav.component";
+import { Chapter3Component } from './chapter3/chapter3.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SideNavComponent } from "./side-nav/side-nav.component";
     NextButtonComponent,
     PrevButtonComponent,
     Chapter2Component,
-    SideNavComponent
+    SideNavComponent,
+    Chapter3Component
   ],
   imports: [BrowserModule],
   providers: [],
