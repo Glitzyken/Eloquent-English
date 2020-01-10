@@ -10,6 +10,7 @@ import { PrevButtonComponent } from "./prev-button/prev-button.component";
 import { Chapter2Component } from "./chapter2/chapter2.component";
 import { SideNavComponent } from "./side-nav/side-nav.component";
 import { Chapter3Component } from './chapter3/chapter3.component';
+import { Chapter4Component } from './chapter4/chapter4.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { Chapter3Component } from './chapter3/chapter3.component';
     PrevButtonComponent,
     Chapter2Component,
     SideNavComponent,
-    Chapter3Component
+    Chapter3Component,
+    Chapter4Component
   ],
   imports: [BrowserModule],
   providers: [],

@@ -1,4 +1,4 @@
-@import "./vars";
+@import './vars';
 
 //////////////////////////////////////////////
 /////// Global styling for all chapter components created
@@ -13,16 +13,21 @@
   padding-bottom: 5rem;
   &__section {
     padding: 1rem;
-    padding: 3rem 12rem 3rem 12rem;
+    padding: 4rem 12rem 4rem 12rem;
 
     &--green {
       background-color: $color-consonant1;
-      padding: 3rem 12rem 3rem 12rem;
+      padding: 4rem 12rem 4rem 12rem;
     }
 
     &--dark {
       background-color: $color-background;
-      padding: 3rem 12rem 3rem 12rem;
+      padding: 4rem 12rem 4rem 12rem;
+    }
+
+    &--grey {
+      background-color: $color-bg;
+      padding: 4rem 12rem 4rem 12rem;
     }
   }
 
@@ -30,21 +35,27 @@
     text-transform: uppercase;
     font-size: 2.5rem;
     color: $color-background;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
   }
 
   &__h1-onColorWhite {
     text-transform: uppercase;
     font-size: 2.5rem;
     color: $color-heading;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
   }
 
   &__h1-onColorDark {
     text-transform: capitalize;
     font-size: 2.5rem;
     color: $color-consonant2;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  &__h1-child {
+    font-size: 2.5rem;
+    color: $color-heading;
+    margin-bottom: 3rem;
   }
 
   &__h2 {
@@ -60,27 +71,35 @@
         margin-bottom: 1rem;
       }
     }
+
+    &--ipa {
+      font-size: 2rem;
+      text-align: center;
+      color: $color-consonant1;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
   }
 
   &__par {
     font-size: 1.5rem;
 
     &:not(:last-child) {
-      margin-bottom: 1rem;
+      margin-bottom: 2.5rem;
     }
   }
 
   &__img {
     width: 200px;
     height: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
     &--ads {
       width: 800px;
       height: auto;
       margin-top: 5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
   }
 }
@@ -89,16 +108,26 @@
 /////// List Styling
 
 .ul-darkBg {
-  list-style-type: circle;
+  list-style-type: none;
 
   &__li {
     color: $color-bg;
     font-size: 1.5rem;
   }
+
+  &__li::before {
+    content: '';
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+    background-color: $color-consonant2;
+  }
 }
 
 .ul-greenBg {
-  list-style-type: circle;
+  list-style-type: none;
 
   &__li {
     font-size: 1.5rem;
@@ -106,9 +135,119 @@
 }
 
 .ul-whiteBg {
-  list-style-type: circle;
+  list-style-type: none;
 
   &__li {
+    font-size: 1.5rem;
+  }
+
+  &__li::before {
+    content: '';
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+    background-color: $color-subheading;
+  }
+}
+
+///////////////////////////////////////////////////////
+/////// Table Styling (chapter 4)
+
+.table {
+  font-size: 1.5rem;
+  text-align: center;
+  color: $color-bg;
+  border: 2px solid $color-ipa;
+
+  &__th {
+    padding: 1rem;
+    font-size: 1.7rem;
+    border-bottom: 1px solid $color-ipa;
+
+    &:not(:last-child) {
+      border-right: 1px solid $color-ipa;
+    }
+  }
+
+  &__td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid $color-ipa;
+
+    &:not(:last-child) {
+      border-right: 1px solid $color-ipa;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////
+/////// Fancy Table Styling (chapter 4)
+
+.fancy-table {
+  font-size: 1.5rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+
+  &__cell {
+    background-color: $color-consonant1;
+    padding: 1.5rem 5rem 1.5rem 5rem;
+    text-align: left;
+
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+
+    &--header {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////
+/////// simple Table Styling (chapter 4)
+
+.simple-table {
+  font-size: 1.5rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+
+  &__cell {
+    padding: 1.5rem 5rem 1.5rem 5rem;
+    text-align: center;
+
+    &--header {
+      font-size: 1.7rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////
+/////// Chapter (number/title) Styling
+
+.chapter {
+  text-align: center;
+  background-color: $color-consonant2;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  color: $color-background;
+
+  &__number {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
     font-size: 1.5rem;
   }
 }
