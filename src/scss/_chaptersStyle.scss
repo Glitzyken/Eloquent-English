@@ -4,6 +4,8 @@
 /////// Global styling for all chapter components created
 ////// This style sheet is exported to individual chapter component
 
+/////// Containers
+
 .column {
   display: grid;
   grid-template-columns: 320px 1fr;
@@ -30,6 +32,8 @@
       padding: 4rem 12rem 4rem 12rem;
     }
   }
+
+  /////// Headings
 
   &__h1-onColorGreen {
     text-transform: uppercase;
@@ -81,6 +85,8 @@
     }
   }
 
+  /////// Main Paragraphs
+
   &__par {
     font-size: 1.5rem;
 
@@ -88,6 +94,8 @@
       margin-bottom: 2.5rem;
     }
   }
+
+  /////// Main Images and Ads Images
 
   &__img {
     width: 200px;
@@ -217,11 +225,9 @@
   height: auto;
   margin-bottom: 3rem;
   display: flex;
-  justify-content: center;
 
   &__cell {
-    padding: 1.5rem 5rem 1.5rem 5rem;
-    text-align: center;
+    padding: 1.5rem;
 
     &--header {
       font-size: 1.7rem;
@@ -248,6 +254,8 @@
   }
 
   &__title {
+    padding-left: 40rem;
+    padding-right: 40rem;
     font-size: 1.5rem;
   }
 }
