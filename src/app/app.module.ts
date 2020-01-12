@@ -12,6 +12,7 @@ import { SideNavComponent } from "./side-nav/side-nav.component";
 import { Chapter3Component } from './chapter3/chapter3.component';
 import { Chapter4Component } from './chapter4/chapter4.component';
 import { Chapter5Component } from './chapter5/chapter5.component';
+import { Chapter6Component } from './chapter6/chapter6.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { Chapter5Component } from './chapter5/chapter5.component';
     SideNavComponent,
     Chapter3Component,
     Chapter4Component,
-    Chapter5Component
+    Chapter5Component,
+    Chapter6Component
   ],
   imports: [BrowserModule],
   providers: [],
