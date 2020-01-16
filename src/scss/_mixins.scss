@@ -1,0 +1,38 @@
+// Media Query manager
+
+/*
+0 - 600px   phone
+600px - 900px   tab-port
+900px - 1200px  tab-land
+1800+   big-desktop
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    // 600px (1em = 16px. thus, 600px/16px = 56.25em)
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    // 900px (1em = 16px. thus, 900px/16px = 56.25em)
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    // 1200px (1em = 16px. thus, 1200px/16px = 75em)
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bit-desktop {
+    // 1800px (1em = 16px. thus, 1800px/16px = 112.5em)
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

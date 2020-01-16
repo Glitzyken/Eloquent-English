@@ -1,9 +1,14 @@
 @import '../../scss/vars';
+@import '../../scss/mixins';
 
 h1,
 h2 {
   margin-bottom: 2rem;
   font-size: 2.5rem;
+
+  @include respond(phone) {
+    line-height: 3rem;
+  }
 }
 
 // All contents are wrapped into one container
@@ -11,13 +16,24 @@ h2 {
   background-color: $color-bg;
   color: $color-heading;
   text-align: center;
-  padding: 1rem;
   padding-bottom: 10rem;
+
+  @include respond(phone) {
+    padding-bottom: 5rem;
+  }
 
   &__container {
     width: 60%;
     margin: auto;
     padding-top: 5rem;
+
+    @include respond(tab-port) {
+      width: 70%;
+    }
+
+    @include respond(phone) {
+      width: 80%;
+    }
   }
 }
 
