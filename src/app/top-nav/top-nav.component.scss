@@ -1,4 +1,5 @@
 @import '../../scss/vars';
+@import '../../scss/mixins';
 
 .nav {
   font-size: 1.5rem;
@@ -13,6 +14,10 @@
   &__item {
     margin-right: 1rem;
     align-self: center;
+
+    @include respond(phone) {
+      margin-right: 0.7rem;
+    }
   }
 
   &__link {
@@ -38,6 +43,11 @@
     color: $color-heading;
     transition: all 0.2s;
     cursor: pointer;
+
+    @include respond(phone) {
+      padding: 0.5rem 1rem;
+      font-size: 0.7rem;
+    }
   }
 
   &:nth-last-child(1) {
