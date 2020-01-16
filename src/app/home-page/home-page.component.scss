@@ -1,4 +1,4 @@
-@import "../../scss/vars";
+@import '../../scss/vars';
 
 h1,
 h2 {
@@ -12,6 +12,7 @@ h2 {
   color: $color-heading;
   text-align: center;
   padding: 1rem;
+  padding-bottom: 10rem;
 
   &__container {
     width: 60%;
