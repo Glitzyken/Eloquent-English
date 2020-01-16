@@ -20,25 +20,42 @@ a {
   &__logo {
     margin-top: 0.5rem;
     margin-left: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     width: 200px;
     height: auto;
   }
 
-  &__list {
-    list-style-type: none;
+  &__nav {
+    // background-color: yellow;
+    height: 400px;
+    overflow: auto;
+    margin-bottom: 5rem;
+
+    &--list {
+      list-style-type: none;
+    }
+
+    &--heading {
+      margin-left: 1rem;
+      font-size: 1.3rem;
+      text-transform: capitalize;
+    }
+
+    &--chapter {
+      text-transform: uppercase;
+      color: $color-bg;
+      font-size: 2rem;
+      margin-left: 0.5rem;
+      margin-top: 1rem;
+    }
   }
 
-  &__heading {
-    margin-left: 1rem;
-    font-size: 1.1rem;
-    text-transform: capitalize;
-  }
+  &__logout {
+    font-size: 1.7rem;
+    text-align: center;
 
-  &__chapter {
-    color: $color-bg;
-    font-size: 2rem;
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
+    &--link {
+      color: $color-diphthong;
+    }
   }
 }
