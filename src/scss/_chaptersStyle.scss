@@ -6,9 +6,16 @@
 
 /////// Containers
 
-.column {
-  display: grid;
-  grid-template-columns: 320px 1fr;
+.wrapper {
+  display: flex;
+}
+.aside {
+  width: 25%;
+}
+
+.main {
+  flex: 1;
+  overflow: auto;
 }
 
 .content {
