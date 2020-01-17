@@ -26,8 +26,7 @@ a {
   }
 
   &__nav {
-    // background-color: yellow;
-    height: 400px;
+    height: 450px;
     overflow: auto;
     margin-bottom: 5rem;
 
@@ -47,15 +46,6 @@ a {
       font-size: 2rem;
       margin-left: 0.5rem;
       margin-top: 1rem;
-    }
-  }
-
-  &__logout {
-    font-size: 1.7rem;
-    text-align: center;
-
-    &--link {
-      color: $color-diphthong;
     }
   }
 }
