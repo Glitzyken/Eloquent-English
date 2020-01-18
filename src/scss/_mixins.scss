@@ -2,8 +2,9 @@
 
 /*
 0 - 600px   phone
-600px - 900px   tab-port
-900px - 1200px  tab-land
+600px - 900px   tab portrait
+900px - 1200px  tablet landscape
+1200px - 1800px  normal
 1800+   big-desktop
 */
 
@@ -25,6 +26,13 @@
   @if $breakpoint == tab-land {
     // 1200px (1em = 16px. thus, 1200px/16px = 75em)
     @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-Reverse {
+    // 600px (1em = 16px. thus, 600px/16px = 56.25em)
+    @media (min-width: 56.25em) {
       @content;
     }
   }

@@ -1,7 +1,6 @@
 // Colors
 $color-black: #000000; // black
 $color-white: #ffffff; // white
-$color-introduction: #009fe3; // introduction
 $color-diphthong: #d24a99; // diphthong
 $color-consonant1: #44bf99; // consonant1
 $color-consonant2: #44bcb9; // consonant2
@@ -12,8 +11,8 @@ $color-subheading: #a86551; // subheading
 $color-ipa: #db6037; // ipa
 
 // FONT VARIABLES
-$font-primary: "Nunito", sans-serif;
-$font-display: "Josefin Sans", sans-serif;
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; // 1200px

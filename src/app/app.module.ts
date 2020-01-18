@@ -14,6 +14,7 @@ import { Chapter4Component } from './chapter4/chapter4.component';
 import { Chapter5Component } from './chapter5/chapter5.component';
 import { Chapter6Component } from './chapter6/chapter6.component';
 import { FooterComponent } from './footer/footer.component';
+import { ButtonNavComponent } from './button-nav/button-nav.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FooterComponent } from './footer/footer.component';
     Chapter4Component,
     Chapter5Component,
     Chapter6Component,
-    FooterComponent
+    FooterComponent,
+    ButtonNavComponent
   ],
   imports: [BrowserModule],
   providers: [],
