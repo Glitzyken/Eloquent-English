@@ -440,3 +440,33 @@
     }
   }
 }
+
+///////////////////////////////////////////////////////
+/////// "Thanks for Reading" Styling
+
+.thanks4reading {
+  font-size: 3rem;
+  display: inline-block;
+  padding: 2rem;
+  background-color: $color-consonant1;
+  border-radius: 1rem;
+  animation: thanks 5s linear 2s infinite alternate;
+}
+
+@keyframes thanks {
+  0% {
+    background-color: $color-consonant2;
+  }
+  25% {
+    background-color: $color-ipa;
+  }
+  50% {
+    background-color: $color-subheading;
+  }
+  75% {
+    background-color: $color-heading;
+  }
+  100% {
+    background-color: $color-background;
+  }
+}

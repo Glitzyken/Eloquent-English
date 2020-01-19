@@ -5,6 +5,13 @@ h1,
 h2 {
   margin-bottom: 2rem;
   font-size: 2.5rem;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-background;
+    transform: skewY(2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
 
   @include respond(phone) {
     line-height: 3rem;
@@ -66,11 +73,11 @@ a {
     margin-bottom: 2rem;
     border: none;
     border-radius: 10rem;
-
     background-color: $color-consonant1;
     color: $color-background;
     transition: all 0.2s;
     cursor: pointer;
+    animation: thanks 5s linear 10s infinite alternate;
   }
 
   &:hover {
@@ -78,6 +85,7 @@ a {
     color: $color-bg;
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    animation: none;
 
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
@@ -110,5 +118,34 @@ a {
   &__par {
     margin-top: 1rem;
     font-size: 1.5rem;
+  }
+}
+
+///////////////////////////////////////////////////////
+/////// btn animation Styling
+
+// .thanks4reading {
+//   font-size: 3rem;
+//   display: inline-block;
+//   padding: 2rem;
+//   background-color: $color-consonant1;
+//   border-radius: 1rem;
+// }
+
+@keyframes thanks {
+  0% {
+    background-color: $color-consonant2;
+  }
+  25% {
+    background-color: $color-ipa;
+  }
+  50% {
+    background-color: $color-subheading;
+  }
+  75% {
+    background-color: $color-heading;
+  }
+  100% {
+    background-color: $color-background;
   }
 }
