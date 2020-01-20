@@ -10,6 +10,11 @@ button {
   cursor: pointer;
 
   &:hover {
-    border: none;
+    background-color: $color-diphthong;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
   }
 }

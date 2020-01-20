@@ -18,6 +18,20 @@ h2 {
   }
 }
 
+p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: $color-consonant1;
+
+  &:hover {
+    color: $color-ipa;
+  }
+}
+
 // All contents are wrapped into one container
 .wrapper {
   background-color: $color-bg;
@@ -50,20 +64,6 @@ h2 {
   margin-bottom: 2rem;
 }
 
-p {
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
-}
-
-a {
-  text-decoration: none;
-  color: $color-consonant1;
-
-  &:hover {
-    color: $color-ipa;
-  }
-}
-
 .btn {
   &,
   &:link,
@@ -74,7 +74,7 @@ a {
     border: none;
     border-radius: 10rem;
     background-color: $color-consonant1;
-    color: $color-background;
+    color: $color-bg;
     transition: all 0.2s;
     cursor: pointer;
     animation: thanks 5s linear 10s infinite alternate;
@@ -121,20 +121,8 @@ a {
   }
 }
 
-.read-link {
-  color: $color-bg;
-}
-
 ///////////////////////////////////////////////////////
 /////// btn animation Styling
-
-// .thanks4reading {
-//   font-size: 3rem;
-//   display: inline-block;
-//   padding: 2rem;
-//   background-color: $color-consonant1;
-//   border-radius: 1rem;
-// }
 
 @keyframes thanks {
   0% {

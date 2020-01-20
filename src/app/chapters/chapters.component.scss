@@ -1,4 +1,5 @@
 @import '../../scss/vars';
+@import '../../scss/mixins';
 
 .chapters {
   background-color: $color-bg;
@@ -6,6 +7,14 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
+  @include respond(phone) {
+    padding: 1.5rem;
+  }
 
   &__card {
     background-color: $color-consonant1;
@@ -18,12 +27,25 @@
     &:hover {
       background-color: $color-consonant2;
     }
+
+    @include respond(tab-port) {
+      padding: 2rem;
+      flex-basis: 40%;
+    }
+
+    @include respond(phone) {
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      margin-right: 1.5rem;
+      flex-basis: 80%;
+    }
   }
 
   &__chapter {
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
+    line-height: 3rem;
     transition: all 0.2s;
 
     &:hover {
