@@ -1,0 +1,54 @@
+@import '../../scss/vars';
+
+.chapters {
+  background-color: $color-bg;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem;
+
+  &__card {
+    background-color: $color-consonant1;
+    flex-basis: 35%;
+    text-align: center;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+
+    &:hover {
+      background-color: $color-consonant2;
+    }
+  }
+
+  &__chapter {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-background;
+      transform: skewY(2deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-background;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-black;
+    }
+  }
+}

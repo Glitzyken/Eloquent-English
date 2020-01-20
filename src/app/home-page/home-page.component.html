@@ -1,5 +1,6 @@
 <!--Home page-->
 
+<app-top-nav></app-top-nav>
 <div class="wrapper">
   <div class="wrapper__container">
     <h1>Become an Eloquent English Speaker</h1>
@@ -9,7 +10,11 @@
       class="book-cover"
     />
     <p>Free to read under a <a href="#">Creative Commons license</a></p>
-    <button class="btn">Read 📖</button> 
+
+    <a routerLink="/chapters" class="read-link"
+      ><button class="btn">Read 📖</button></a
+    >
+
     <h2>Objective</h2>
     <div class="objective">
       <p class="objective__par">
@@ -53,3 +58,4 @@
     </div>
   </div>
 </div>
+<app-footer></app-footer>

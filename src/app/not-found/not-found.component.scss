@@ -1,0 +1,25 @@
+@import '../../scss/vars';
+
+.not-found {
+  background-color: $color-bg;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__text {
+    color: $color-background;
+    font-size: 3rem;
+    text-transform: uppercase;
+    transform: skewY(2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.3);
+  }
+
+  &__img {
+    margin-top: 3rem;
+    width: 15rem;
+    height: auto;
+  }
+}

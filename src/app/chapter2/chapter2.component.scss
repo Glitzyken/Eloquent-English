@@ -1,4 +1,15 @@
 ///////////////////////////////////////////////
 //////// Stylings are dinamically generated from chapterStyle.scss
 
-@import "../../scss/chaptersStyle";
+@import '../../scss/chaptersStyle';
+
+button {
+  background-color: $color-bg;
+  padding: 1rem;
+  border: 1px solid $color-heading;
+  cursor: pointer;
+
+  &:hover {
+    border: none;
+  }
+}
