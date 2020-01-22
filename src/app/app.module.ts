@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -18,6 +18,18 @@ import { FooterComponent } from './footer/footer.component';
 import { ButtonNavComponent } from './button-nav/button-nav.component';
 import { ChaptersComponent } from './chapters/chapters.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+
+const routes: Routes = [
+  { path: '', component: HomePageComponent },
+  { path: 'chapters', component: ChaptersComponent },
+  { path: 'chapter1', component: Chapter1Component },
+  { path: 'chapter2', component: Chapter2Component },
+  { path: 'chapter3', component: Chapter3Component },
+  { path: 'chapter4', component: Chapter4Component },
+  { path: 'chapter5', component: Chapter5Component },
+  { path: 'chapter6', component: Chapter6Component },
+  { path: '**', component: NotFoundComponent }
+];
 
 @NgModule({
   declarations: [
@@ -40,17 +52,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-      { path: '', component: HomePageComponent },
-      { path: 'chapters', component: ChaptersComponent },
-      { path: 'chapter1', component: Chapter1Component },
-      { path: 'chapter2', component: Chapter2Component },
-      { path: 'chapter3', component: Chapter3Component },
-      { path: 'chapter4', component: Chapter4Component },
-      { path: 'chapter5', component: Chapter5Component },
-      { path: 'chapter6', component: Chapter6Component },
-      { path: '**', component: NotFoundComponent }
-    ])
+    RouterModule.forRoot(routes, {
+      anchorScrolling: 'enabled'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

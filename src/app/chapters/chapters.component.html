@@ -1,110 +1,269 @@
 <app-top-nav></app-top-nav>
 
 <div class="chapters">
+  <!--//////////////////////////////////////////
+    //////////////////////////CHAPTER 1-->
+
   <div class="chapters__card">
-    <h1 class="chapters__chapter">chapter 1</h1>
+    <h1 class="chapters__chapter">
+      <a [routerLink]="['/chapter1']" class="chapters__link-chapter"
+        >chapter 1</a
+      >
+    </h1>
     <ul class="chapters__list">
       <li class="chapters__item">
-        <a href="/chapter1#what-is-communication" class="chapters__link"> <!--TODO: Research for the Angualar counterpart for this-->
+        <a
+          [routerLink]="['/chapter1']"
+          fragment="what-is-communication"
+          class="chapters__link"
+        >
           what is communication?</a
         >
       </li>
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link">
+        <a
+          [routerLink]="['/chapter1']"
+          fragment="how-to-attain-the-skills-of-effective-communication"
+          class="chapters__link"
+        >
           how to attain the skills of effective communication</a
         >
       </li>
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link">
+        <a
+          [routerLink]="['/chapter1']"
+          fragment="importance-of-effective-communication"
+          class="chapters__link"
+        >
           importance of effective communication</a
         >
       </li>
     </ul>
   </div>
+
+  <!--//////////////////////////////////////////
+    //////////////////////////CHAPTER 2-->
+
   <div class="chapters__card">
-    <h1 class="chapters__chapter">chapter 2</h1>
+    <h1 class="chapters__chapter">
+      <a [routerLink]="['/chapter2']" class="chapters__link-chapter"
+        >chapter 2</a
+      >
+    </h1>
     <ul class="chapters__list">
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> what is diction?</a>
+        <a
+          [routerLink]="['/chapter2']"
+          fragment="what-is-diction"
+          class="chapters__link"
+        >
+          what is diction?</a
+        >
       </li>
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> what is pronunciation?</a>
+        <a
+          [routerLink]="['/chapter2']"
+          fragment="what-is-pronunciation"
+          class="chapters__link"
+        >
+          what is pronunciation?</a
+        >
       </li>
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link">
+        <a
+          [routerLink]="['/chapter2']"
+          fragment="important-aspects-of-pronunciation"
+          class="chapters__link"
+        >
           important aspects of pronunciation</a
         >
       </li>
     </ul>
   </div>
+
+  <!--//////////////////////////////////////////
+    //////////////////////////CHAPTER 3-->
+
   <div class="chapters__card">
-    <h1 class="chapters__chapter">chapter 3</h1>
+    <h1 class="chapters__chapter">
+      <a [routerLink]="['/chapter3']" class="chapters__link-chapter"
+        >chapter 3</a
+      >
+    </h1>
     <ul class="chapters__list">
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> what is an accent?</a>
+        <a
+          [routerLink]="['/chapter3']"
+          fragment="what-is-an-accent"
+          class="chapters__link"
+        >
+          what is an accent?</a
+        >
       </li>
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link">
+        <a
+          [routerLink]="['/chapter3']"
+          fragment="the-different-types-of-british-accent"
+          class="chapters__link"
+        >
           the different types of british accent</a
         >
       </li>
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> accent and neutralization</a>
+        <a
+          [routerLink]="['/chapter3']"
+          fragment="accent-neutralization"
+          class="chapters__link"
+        >
+          accent neutralization</a
+        >
       </li>
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> improving your accent</a>
-      </li>
-    </ul>
-  </div>
-  <div class="chapters__card">
-    <h1 class="chapters__chapter">chapter 4</h1>
-    <ul class="chapters__list">
-      <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> the sound system</a>
-      </li>
-      <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> introduction to phonetics</a>
-      </li>
-      <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> the consonant sounds</a>
-      </li>
-      <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> the vowel sounds</a>
+        <a
+          [routerLink]="['/chapter3']"
+          fragment="ways-to-improve-your-accent"
+          class="chapters__link"
+        >
+          improving your accent</a
+        >
       </li>
     </ul>
   </div>
+
+  <!--//////////////////////////////////////////
+    //////////////////////////CHAPTER 4-->
+
   <div class="chapters__card">
-    <h1 class="chapters__chapter">chapter 5</h1>
+    <h1 class="chapters__chapter">
+      <a [routerLink]="['/chapter4']" class="chapters__link-chapter"
+        >chapter 4</a
+      >
+    </h1>
     <ul class="chapters__list">
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> syllables</a>
+        <a
+          [routerLink]="['/chapter4']"
+          fragment="the-sound-system"
+          class="chapters__link"
+        >
+          the sound system</a
+        >
       </li>
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link">
+        <a
+          [routerLink]="['/chapter4']"
+          fragment="introduction-to-phonetics"
+          class="chapters__link"
+        >
+          introduction to phonetics</a
+        >
+      </li>
+      <li class="chapters__item">
+        <a
+          [routerLink]="['/chapter4']"
+          fragment="the-consonant-sounds"
+          class="chapters__link"
+        >
+          the consonant sounds</a
+        >
+      </li>
+      <li class="chapters__item">
+        <a
+          [routerLink]="['/chapter4']"
+          fragment="the-vowel-sounds"
+          class="chapters__link"
+        >
+          the vowel sounds</a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <!--//////////////////////////////////////////
+    //////////////////////////CHAPTER 5-->
+
+  <div class="chapters__card">
+    <h1 class="chapters__chapter">
+      <a [routerLink]="['/chapter5']" class="chapters__link-chapter"
+        >chapter 5</a
+      >
+    </h1>
+    <ul class="chapters__list">
+      <li class="chapters__item">
+        <a
+          [routerLink]="['/chapter5']"
+          fragment="syllables"
+          class="chapters__link"
+        >
+          syllables</a
+        >
+      </li>
+      <li class="chapters__item">
+        <a
+          [routerLink]="['/chapter5']"
+          fragment="correct-pronunciation-of-plural-markers"
+          class="chapters__link"
+        >
           correct pronunciation of plural markers</a
         >
       </li>
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link">
+        <a
+          [routerLink]="['/chapter5']"
+          fragment="pronunciation-of-past-tense-markers"
+          class="chapters__link"
+        >
           pronunciation of past tense markers</a
         >
       </li>
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> what is stress?</a>
+        <a
+          [routerLink]="['/chapter5']"
+          fragment="stress"
+          class="chapters__link"
+        >
+          what is stress?</a
+        >
       </li>
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> what is intonation?</a>
+        <a
+          [routerLink]="['/chapter5']"
+          fragment="what-is-intonation"
+          class="chapters__link"
+        >
+          what is intonation?</a
+        >
       </li>
     </ul>
   </div>
+
+  <!--//////////////////////////////////////////
+    //////////////////////////CHAPTER 6-->
+
   <div class="chapters__card">
-    <h1 class="chapters__chapter">chapter 6</h1>
+    <h1 class="chapters__chapter">
+      <a [routerLink]="['/chapter6']" class="chapters__link-chapter"
+        >chapter 6</a
+      >
+    </h1>
     <ul class="chapters__list">
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> linking the pronunciation</a>
+        <a
+          [routerLink]="['/chapter6']"
+          fragment="linking-in-pronunciation"
+          class="chapters__link"
+        >
+          linking in pronunciation</a
+        >
       </li>
       <li class="chapters__item">
-        <a routerLink="#" class="chapters__link"> silent letters</a>
+        <a
+          [routerLink]="['/chapter6']"
+          fragment="silent-letters"
+          class="chapters__link"
+        >
+          silent letters</a
+        >
       </li>
     </ul>
   </div>

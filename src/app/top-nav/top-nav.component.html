@@ -1,7 +1,9 @@
 <!--Reusable navigation component on the top of the page-->
 
 <nav class="nav">
-  <div class="nav__item"><a routerLink="/" class="nav__link">Home</a></div>
+  <div class="nav__item">
+    <a [routerLink]="['/']" class="nav__link">Home</a>
+  </div>
   <div class="nav__item">|</div>
   <div class="nav__item">Buy on Amazon 👉</div>
   <button class="btn">kindle 📟</button>
