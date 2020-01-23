@@ -26,7 +26,7 @@ a {
   }
 
   &__nav {
-    height: 450px;
+    height: 400px;
     overflow: auto;
     margin-bottom: 5rem;
 
@@ -46,6 +46,78 @@ a {
       font-size: 2rem;
       margin-left: 0.5rem;
       margin-top: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-consonant1;
+      }
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
     }
+  }
+
+  &__cta {
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+}
+
+.buy {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    border: none;
+    border-radius: 10rem;
+    background-color: $color-consonant1;
+    color: $color-bg;
+    transition: all 0.2s;
+    cursor: pointer;
+    animation: thanks 5s linear 100s infinite alternate;
+  }
+
+  &:hover {
+    background-color: $color-ipa;
+    color: $color-bg;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    animation: none;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+}
+
+///////////////////////////////////////////////////////
+/////// buy animation Styling
+
+@keyframes thanks {
+  0% {
+    background-color: $color-consonant2;
+  }
+  25% {
+    background-color: $color-ipa;
+  }
+  50% {
+    background-color: $color-subheading;
+  }
+  75% {
+    background-color: $color-heading;
+  }
+  100% {
+    background-color: $color-background;
   }
 }

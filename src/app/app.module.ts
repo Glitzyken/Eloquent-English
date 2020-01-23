@@ -16,18 +16,12 @@ import { Chapter5Component } from './chapter5/chapter5.component';
 import { Chapter6Component } from './chapter6/chapter6.component';
 import { FooterComponent } from './footer/footer.component';
 import { ButtonNavComponent } from './button-nav/button-nav.component';
-import { ChaptersComponent } from './chapters/chapters.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ContentComponent } from './content/content.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: 'chapters', component: ChaptersComponent },
-  { path: 'chapter1', component: Chapter1Component },
-  { path: 'chapter2', component: Chapter2Component },
-  { path: 'chapter3', component: Chapter3Component },
-  { path: 'chapter4', component: Chapter4Component },
-  { path: 'chapter5', component: Chapter5Component },
-  { path: 'chapter6', component: Chapter6Component },
+  { path: 'content', component: ContentComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -47,8 +41,8 @@ const routes: Routes = [
     Chapter6Component,
     FooterComponent,
     ButtonNavComponent,
-    ChaptersComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,

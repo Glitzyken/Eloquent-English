@@ -30,7 +30,7 @@
     }
   }
 
-  @if $breakpoint == tab-Reverse {
+  @if $breakpoint == tab-reverse {
     // 600px (1em = 16px. thus, 600px/16px = 56.25em)
     @media (min-width: 56.25em) {
       @content;
