@@ -20,7 +20,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ContentComponent } from './content/content.component';
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomePageComponent },
   { path: 'content', component: ContentComponent },
   { path: '**', component: NotFoundComponent }
 ];
