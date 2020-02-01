@@ -22,6 +22,10 @@ p {
   margin-bottom: 3rem;
   font-size: 2rem;
 
+  @include respond(tab-port) {
+    line-height: 3.5rem;
+  }
+
   @include respond(phone) {
     line-height: 3rem;
   }
@@ -37,6 +41,10 @@ a {
 }
 
 li {
+  @include respond(tab-port) {
+    line-height: 3rem;
+  }
+
   @include respond(phone) {
     line-height: 2.5rem;
   }
@@ -119,6 +127,10 @@ li {
     margin-top: 1.5rem;
     font-size: 2.2rem;
 
+    @include respond(tab-port) {
+      line-height: 3.5rem;
+    }
+
     @include respond(phone) {
       line-height: 3rem;
     }
@@ -132,6 +144,10 @@ li {
   &__par {
     margin-top: 1.5rem;
     font-size: 2.2rem;
+
+    @include respond(tab-port) {
+      line-height: 3.5rem;
+    }
 
     @include respond(phone) {
       line-height: 3rem;

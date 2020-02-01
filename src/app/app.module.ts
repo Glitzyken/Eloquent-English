@@ -18,11 +18,17 @@ import { FooterComponent } from './footer/footer.component';
 import { ButtonNavComponent } from './button-nav/button-nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ContentComponent } from './content/content.component';
+import { LearnIpaComponent } from './learn-ipa/learn-ipa.component';
+import { CreditsComponent } from './credits/credits.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
   { path: 'content', component: ContentComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'credits', component: CreditsComponent },
+  { path: 'learn-ipa', component: LearnIpaComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -43,7 +49,10 @@ const routes: Routes = [
     FooterComponent,
     ButtonNavComponent,
     NotFoundComponent,
-    ContentComponent
+    ContentComponent,
+    LearnIpaComponent,
+    CreditsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
