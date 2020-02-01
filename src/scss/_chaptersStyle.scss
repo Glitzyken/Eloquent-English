@@ -101,7 +101,7 @@
 
   &__h1-onColorGreen {
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font: 3rem 'Varela Round';
     color: $color-background;
     margin-bottom: 3rem;
     transition: all 0.2s;
@@ -127,8 +127,7 @@
 
   &__h1-onColorWhite {
     text-transform: uppercase;
-    font-size: 2.5rem;
-    color: $color-heading;
+    font: 3rem 'Varela Round';
     margin-bottom: 3rem;
     transition: all 0.2s;
 
@@ -154,12 +153,13 @@
 
   &__h1-onColorDark {
     text-transform: capitalize;
-    font-size: 2.5rem;
+    font: 3rem 'Varela Round';
     color: $color-consonant2;
     margin-bottom: 3rem;
     transition: all 0.2s;
 
     &:hover {
+      color: $color-consonant1;
       transform: skewY(2deg) scale(1.1);
       text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
     }
@@ -204,6 +204,7 @@
   }
 
   &__h2 {
+    font-size: 2.2rem;
     text-transform: uppercase;
     color: $color-subheading;
     margin-top: 2rem;
@@ -223,7 +224,7 @@
     }
 
     &--par {
-      font-size: 1.5rem;
+      font-size: 2.2rem;
 
       &:not(:last-child) {
         margin-bottom: 1rem;
@@ -231,7 +232,7 @@
     }
 
     &--ipa {
-      font-size: 2rem;
+      font-size: 2.5rem;
       text-align: center;
       color: $color-consonant1;
       margin-top: 2rem;
@@ -242,7 +243,7 @@
   /////// Main Paragraphs
 
   &__par {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
 
     &:not(:last-child) {
       margin-bottom: 2.5rem;
@@ -279,7 +280,7 @@
 
   &__li {
     color: $color-bg;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
 
   &__li::before {
@@ -297,7 +298,7 @@
   list-style-type: none;
 
   &__li {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -305,7 +306,7 @@
   list-style-type: none;
 
   &__li {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
 
   &__li::before {
@@ -323,14 +324,14 @@
 /////// Table Styling (chapter 4)
 
 .table {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   text-align: center;
   color: $color-bg;
   border: 2px solid $color-ipa;
 
   &__th {
     padding: 1rem;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     border-bottom: 1px solid $color-ipa;
 
     &:not(:last-child) {
@@ -353,7 +354,7 @@
 /////// Fancy Table Styling (chapter 4)
 
 .fancy-table {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   width: 100%;
   height: auto;
   margin-bottom: 3rem;
@@ -382,7 +383,7 @@
     }
 
     &--header {
-      font-size: 1.7rem;
+      font-size: 2.5rem;
     }
   }
 }
@@ -391,7 +392,7 @@
 /////// simple Table Styling (chapter 4)
 
 .simple-table {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   width: 100%;
   height: auto;
   margin-bottom: 3rem;
@@ -401,7 +402,7 @@
     padding: 1.5rem;
 
     &--header {
-      font-size: 1.7rem;
+      font-size: 2.5rem;
       margin-bottom: 1.5rem;
     }
   }
@@ -421,14 +422,14 @@
   color: $color-background;
 
   &__number {
-    font-size: 5rem;
-    margin-bottom: 2rem;
+    font: 5rem 'Varela Round';
+    margin-bottom: 1rem;
   }
 
   &__title {
     padding-left: 35rem;
     padding-right: 35rem;
-    font-size: 1.5rem;
+    font: 1.5rem 'Varela Round';
 
     @include respond(tab-land) {
       padding-left: 30rem;

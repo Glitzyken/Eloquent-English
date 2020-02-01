@@ -2,7 +2,7 @@
 @import '../../scss/mixins';
 
 .nav {
-  font-size: 1.5rem;
+  font: 1.5rem 'Varela Round';
   width: 100%;
   padding: 2rem 1rem 2rem 1rem;
   display: flex;
@@ -36,7 +36,7 @@
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1rem 3rem;
+    padding: 0.5rem 2rem;
     margin-right: 1rem;
     border-radius: 10rem;
     border: 1px solid $color-heading;
