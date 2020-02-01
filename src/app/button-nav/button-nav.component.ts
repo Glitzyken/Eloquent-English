@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-button-nav',
@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button-nav.component.scss']
 })
 export class ButtonNavComponent implements OnInit {
-  constructor() {}
+  // @ViewChild('intro') intro: ElementRef;
 
-  ngOnInit() {}
+  constructor(private element: ElementRef) {}
+
+  ngOnInit() {
+    // console.log(this.element.nativeElement);
+  }
 }
