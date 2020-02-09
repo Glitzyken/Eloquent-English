@@ -1,16 +1,14 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-button-nav',
   templateUrl: './button-nav.component.html',
   styleUrls: ['./button-nav.component.scss']
 })
-export class ButtonNavComponent implements OnInit {
-  // @ViewChild('intro') intro: ElementRef;
+export class ButtonNavComponent {
+  @ViewChild('nav', { static: true }) nav;
 
-  constructor(private element: ElementRef) {}
-
-  ngOnInit() {
-    // console.log(this.element.nativeElement);
+  onClick() {
+    this.nav.nativeElement.checked = false;
   }
 }
