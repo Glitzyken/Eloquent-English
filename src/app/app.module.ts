@@ -21,6 +21,7 @@ import { ContentComponent } from './content/content.component';
 import { LearnIpaComponent } from './learn-ipa/learn-ipa.component';
 import { CreditsComponent } from './credits/credits.component';
 import { ContactComponent } from './contact/contact.component';
+import { GoToTopComponent } from './go-to-top/go-to-top.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -52,7 +53,8 @@ const routes: Routes = [
     ContentComponent,
     LearnIpaComponent,
     CreditsComponent,
-    ContactComponent
+    ContactComponent,
+    GoToTopComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+.top-button {
+  display: none;
+  &__icon {
+    height: 5rem;
+    position: fixed;
+    bottom: 8rem;
+    right: 6rem;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      bottom: 9rem;
+    }
+  }
+}
