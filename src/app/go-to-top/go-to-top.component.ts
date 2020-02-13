@@ -8,7 +8,7 @@ import { Component, ViewChild, HostListener } from '@angular/core';
 export class GoToTopComponent {
   @ViewChild('top', { static: true }) top;
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll')
   switchDisplayButton() {
     const windowScroll = window.pageYOffset;
     if (windowScroll > 20) {

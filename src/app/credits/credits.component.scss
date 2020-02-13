@@ -1,0 +1,77 @@
+@import '../../scss/vars';
+@import '../../scss/mixins';
+
+.credits {
+  font: 1.5rem 'Varela Round';
+  height: 100vh;
+  width: 80%;
+  padding: 2rem;
+  margin: auto;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+
+  @include respond(tab-port) {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  @include respond(phone) {
+    width: 90%;
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__h1 {
+    font-size: 5rem;
+    margin: 2rem;
+    padding: 2rem;
+    grid-column: 1 / 4;
+    color: $color-heading;
+  }
+
+  &__box--1 {
+    padding: 2rem;
+    grid-row: 2 / 5;
+  }
+
+  &__box--2 {
+    padding: 2rem;
+  }
+
+  &__box--3 {
+    padding: 2rem;
+  }
+
+  &__box--4 {
+    padding: 2rem;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+  }
+
+  &__box--5 {
+    padding: 2rem;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    text-transform: capitalize;
+
+    &:not(:last-child) {
+      padding-bottom: 0.2rem;
+    }
+  }
+
+  &__item--heading {
+    color: $color-consonant1;
+    padding-bottom: 1.5rem;
+  }
+}
