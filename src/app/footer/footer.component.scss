@@ -93,7 +93,7 @@
   &__copyright {
     border-top: 1px solid $color-ipa;
     padding-top: 2rem;
-    width: 40%;
+    width: 30%;
 
     @include respond(tab-port) {
       padding-top: 1.5rem;
@@ -109,4 +109,9 @@
       width: 70%;
     }
   }
+}
+
+.license {
+  text-decoration: none;
+  color: $color-ipa;
 }

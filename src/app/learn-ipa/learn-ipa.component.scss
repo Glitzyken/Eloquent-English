@@ -49,11 +49,11 @@ span {
     font: 3rem 'Varela Round';
 
     @include respond(tab-port) {
-      font: 1rem 'Varela Round';
+      margin-bottom: 2rem;
     }
 
     @include respond(phone) {
-      font: 1rem 'Varela Round';
+      margin-bottom: 2rem;
     }
   }
 
@@ -62,14 +62,12 @@ span {
     padding: 1rem;
 
     @include respond(tab-port) {
-      font-size: 0.5rem;
-      line-height: 1rem;
+      line-height: 2.5rem;
       padding: 0.5rem;
     }
 
     @include respond(phone) {
-      font-size: 0.5rem;
-      line-height: 1rem;
+      line-height: 2.5rem;
       padding: 0.5rem;
     }
   }
@@ -78,14 +76,6 @@ span {
     text-align: center;
     background-color: $color-bg;
     padding: 5rem;
-
-    @include respond(tab-port) {
-      padding: 3rem;
-    }
-
-    @include respond(phone) {
-      padding: 3rem;
-    }
 
     &--learn-more {
       font: 3.5rem 'Varela Round';
@@ -176,19 +166,21 @@ span {
     justify-content: center;
     align-items: center;
 
+    // change to square
+
     @include respond(tab-port) {
-      padding: 1rem 3rem;
-      width: 20rem;
+      padding: 3rem;
+      width: 50rem;
       height: auto;
-      margin: 2rem;
+      margin: auto;
       border-radius: 0;
     }
 
     @include respond(phone) {
-      padding: 1rem 3rem;
-      width: 20rem;
+      padding: 3rem;
+      width: 40rem;
       height: auto;
-      margin: 2rem;
+      margin: auto;
       border-radius: 0;
     }
   }
@@ -206,19 +198,21 @@ span {
     justify-content: center;
     align-items: center;
 
+    // change to square
+
     @include respond(tab-port) {
-      padding: 1rem 3rem;
-      width: 20rem;
+      padding: 3rem;
+      width: 50rem;
       height: auto;
-      margin: 2rem;
+      margin: auto;
       border-radius: 0;
     }
 
     @include respond(phone) {
-      padding: 1rem 3rem;
-      width: 20rem;
+      padding: 3rem;
+      width: 40rem;
       height: auto;
-      margin: 2rem;
+      margin: auto;
       border-radius: 0;
     }
   }
@@ -238,19 +232,21 @@ span {
     grid-row: 3 / 4;
     grid-column: 1 / 3;
 
+    // change to square
+
     @include respond(tab-port) {
-      padding: 1rem 3rem;
-      width: 20rem;
+      padding: 3rem;
+      width: 50rem;
       height: auto;
-      margin: 2rem;
+      margin: auto;
       border-radius: 0;
     }
 
     @include respond(phone) {
-      padding: 1rem 3rem;
-      width: 20rem;
+      padding: 3rem;
+      width: 40rem;
       height: auto;
-      margin: 2rem;
+      margin: auto;
       border-radius: 0;
     }
   }
