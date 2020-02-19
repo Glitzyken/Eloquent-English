@@ -22,6 +22,7 @@ import { LearnIpaComponent } from './learn-ipa/learn-ipa.component';
 import { CreditsComponent } from './credits/credits.component';
 import { ContactComponent } from './contact/contact.component';
 import { GoToTopComponent } from './go-to-top/go-to-top.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'credits', component: CreditsComponent },
   { path: 'learn-ipa', component: LearnIpaComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -54,7 +56,8 @@ const routes: Routes = [
     LearnIpaComponent,
     CreditsComponent,
     ContactComponent,
-    GoToTopComponent
+    GoToTopComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,33 @@
+@import '../../scss/mixins';
+
+.pp {
+  font-size: 2.2rem;
+  padding: 3rem;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 3rem;
+
+  @include respond(phone) {
+    width: 95%;
+  }
+
+  &__heading {
+    font: 5rem 'Varela Round';
+    margin-bottom: 3rem;
+
+    &--date {
+      display: block;
+      font: 3rem 'Varela Round';
+    }
+  }
+
+  &__sub-heading {
+    font: 3rem 'Varela Round';
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__par {
+    margin-bottom: 2.5rem;
+  }
+}
