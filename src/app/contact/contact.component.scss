@@ -1,0 +1,89 @@
+@import '../../scss/vars';
+
+.contact {
+  font: 2.5rem Quicksand;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-background, 0.8),
+      rgba($color-background, 0.8)
+    ),
+    url('../../assets/images/bgImage.jpg');
+  background-size: cover;
+  color: $color-white;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  &__form {
+    font: 1.5rem Quicksand;
+    background-color: $color-background;
+    color: $color-white;
+    border: 1px solid $color-white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display: block;
+
+    &--name {
+      width: 50rem;
+
+      &:focus {
+        font-weight: 700;
+        outline: none;
+        border: 1px solid $color-background;
+        background-color: $color-consonant2;
+        color: $color-black;
+      }
+    }
+
+    &--email {
+      width: 50rem;
+
+      &:focus {
+        font-weight: 700;
+        outline: none;
+        border: 1px solid $color-background;
+        background-color: $color-consonant2;
+        color: $color-black;
+      }
+    }
+
+    &--message {
+      width: 50rem;
+      height: 12rem;
+
+      &:focus {
+        font-weight: 700;
+        outline: none;
+        border: 1px solid $color-background;
+        background-color: $color-consonant2;
+        color: $color-black;
+      }
+    }
+  }
+}
+
+.submit-btn {
+  width: 30rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: $color-consonant2;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    width: 50rem;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

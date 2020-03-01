@@ -3,7 +3,8 @@
 
 h1,
 h2 {
-  font: 3.5rem 'Varela Round';
+  font: 3.5rem Quicksand;
+  font-weight: 700;
   margin-bottom: 3rem;
   transition: all 0.2s;
 
@@ -53,7 +54,7 @@ li {
 // All contents are wrapped into one container
 .wrapper {
   background-color: $color-bg;
-  color: $color-heading;
+  color: $color-black;
   text-align: center;
   padding-bottom: 10rem;
 

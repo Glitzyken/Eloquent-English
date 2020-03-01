@@ -2,13 +2,14 @@
 @import '../../scss/mixins';
 
 .nav {
-  font: 1.5rem 'Varela Round';
+  font: 1.5rem Quicksand;
+  font-weight: 700;
   width: 100%;
   padding: 2rem 1rem 2rem 1rem;
   display: flex;
   justify-content: center;
   transition: all 0.2s;
-  color: $color-heading;
+  color: $color-black;
   background-color: $color-bg;
 
   &__item {
@@ -41,7 +42,7 @@
     border-radius: 10rem;
     border: 1px solid $color-heading;
     background-color: $color-bg;
-    color: $color-heading;
+    color: $color-black;
     transition: all 0.2s;
 
     @include respond(phone) {

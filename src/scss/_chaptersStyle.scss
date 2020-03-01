@@ -101,7 +101,8 @@
 
   &__h1-onColorGreen {
     text-transform: uppercase;
-    font: 3rem 'Varela Round';
+    font: 3rem Quicksand;
+    font-weight: 700;
     color: $color-background;
     margin-bottom: 3rem;
     transition: all 0.2s;
@@ -127,7 +128,8 @@
 
   &__h1-onColorWhite {
     text-transform: uppercase;
-    font: 3rem 'Varela Round';
+    font: 3rem Quicksand;
+    font-weight: 700;
     margin-bottom: 3rem;
     transition: all 0.2s;
 
@@ -153,7 +155,8 @@
 
   &__h1-onColorDark {
     text-transform: capitalize;
-    font: 3rem 'Varela Round';
+    font: 3rem Quicksand;
+    font-weight: 700;
     color: $color-consonant2;
     margin-bottom: 3rem;
     transition: all 0.2s;
@@ -491,14 +494,16 @@
   color: $color-background;
 
   &__number {
-    font: 5rem 'Varela Round';
+    font: 5rem Quicksand;
+    font-weight: 700;
     margin-bottom: 1rem;
   }
 
   &__title {
     padding-left: 35rem;
     padding-right: 35rem;
-    font: 1.5rem 'Varela Round';
+    font: 1.5rem Quicksand;
+    font-weight: 700;
 
     @include respond(tab-land) {
       padding-left: 30rem;

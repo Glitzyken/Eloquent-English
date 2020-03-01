@@ -2,7 +2,7 @@
 @import './../../scss/mixins';
 
 .navigation {
-  font-family: 'Varela Round';
+  font-family: Quicksand;
 
   @include respond(tab-reverse) {
     display: none;

@@ -27,7 +27,7 @@ span {
   }
 
   &__h1 {
-    font: 5rem 'Varela Round';
+    font: 5rem Quicksand;
     text-transform: uppercase;
     margin-bottom: 8rem;
     text-align: center;
@@ -35,18 +35,18 @@ span {
     grid-column: 1 / 6;
 
     @include respond(tab-port) {
-      font: 2rem 'Varela Round';
+      font: 2rem Quicksand;
       margin-bottom: 2rem;
     }
 
     @include respond(phone) {
-      font: 2rem 'Varela Round';
+      font: 2rem Quicksand;
       margin-bottom: 2rem;
     }
   }
 
   &__h3 {
-    font: 3rem 'Varela Round';
+    font: 3rem Quicksand;
 
     @include respond(tab-port) {
       margin-bottom: 2rem;
@@ -78,18 +78,18 @@ span {
     padding: 5rem;
 
     &--learn-more {
-      font: 3.5rem 'Varela Round';
+      font: 3.5rem Quicksand;
       text-transform: uppercase;
       color: $color-subheading;
       margin-bottom: 3rem;
 
       @include respond(tab-port) {
-        font: 2rem 'Varela Round';
+        font: 2rem Quicksand;
         margin-bottom: 1.5rem;
       }
 
       @include respond(phone) {
-        font: 2rem 'Varela Round';
+        font: 2rem Quicksand;
         margin-bottom: 1.5rem;
       }
     }
@@ -127,7 +127,7 @@ span {
     }
 
     &--btn {
-      font: 2rem 'Varela Round';
+      font: 2rem Quicksand;
       color: $color-consonant2;
       border-bottom: 1px solid $color-diphthong;
       display: inline-block;
@@ -140,11 +140,11 @@ span {
       }
 
       @include respond(tab-port) {
-        font: 1.5rem 'Varela Round';
+        font: 1.5rem Quicksand;
       }
 
       @include respond(phone) {
-        font: 1.5rem 'Varela Round';
+        font: 1.5rem Quicksand;
       }
     }
 

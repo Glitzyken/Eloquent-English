@@ -23,6 +23,7 @@ import { CreditsComponent } from './credits/credits.component';
 import { ContactComponent } from './contact/contact.component';
 import { GoToTopComponent } from './go-to-top/go-to-top.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { PopupComponent } from './popup/popup.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -57,7 +58,8 @@ const routes: Routes = [
     CreditsComponent,
     ContactComponent,
     GoToTopComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,

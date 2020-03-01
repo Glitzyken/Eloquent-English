@@ -1,1 +1,28 @@
-<p>contact works!</p>
+<div class="contact">
+  <p class="contact__heading">Get in touch with us</p>
+  <form id="form">
+    <input
+      type="text"
+      class="contact__form contact__form--name"
+      id="name"
+      placeholder="name"
+    />
+    <input
+      type="email"
+      class="contact__form contact__form--email"
+      placeholder="email"
+    />
+  </form>
+  <textarea
+    rows="4"
+    cols="50"
+    name="message"
+    form="form"
+    class="contact__form contact__form--message"
+    placeholder="message"
+  ></textarea>
+
+  <button class="submit-btn">Send</button>
+</div>
+
+<app-footer></app-footer>
