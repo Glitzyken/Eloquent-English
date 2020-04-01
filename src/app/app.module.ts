@@ -24,6 +24,7 @@ import { ContactComponent } from './contact/contact.component';
 import { GoToTopComponent } from './go-to-top/go-to-top.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { PopupComponent } from './popup/popup.component';
+import { MessageService } from './message.service';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -67,7 +68,7 @@ const routes: Routes = [
       anchorScrolling: 'enabled'
     })
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
