@@ -6,8 +6,6 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { Chapter1Component } from './chapter1/chapter1.component';
-import { NextButtonComponent } from './next-button/next-button.component';
-import { PrevButtonComponent } from './prev-button/prev-button.component';
 import { Chapter2Component } from './chapter2/chapter2.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { Chapter3Component } from './chapter3/chapter3.component';
@@ -20,17 +18,14 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ContentComponent } from './content/content.component';
 import { LearnIpaComponent } from './learn-ipa/learn-ipa.component';
 import { CreditsComponent } from './credits/credits.component';
-import { ContactComponent } from './contact/contact.component';
 import { GoToTopComponent } from './go-to-top/go-to-top.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { PopupComponent } from './popup/popup.component';
-import { MessageService } from './message.service';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
   { path: 'content', component: ContentComponent },
-  { path: 'contact', component: ContactComponent },
   { path: 'credits', component: CreditsComponent },
   { path: 'learn-ipa', component: LearnIpaComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
@@ -43,8 +38,6 @@ const routes: Routes = [
     HomePageComponent,
     TopNavComponent,
     Chapter1Component,
-    NextButtonComponent,
-    PrevButtonComponent,
     Chapter2Component,
     SideNavComponent,
     Chapter3Component,
@@ -57,7 +50,6 @@ const routes: Routes = [
     ContentComponent,
     LearnIpaComponent,
     CreditsComponent,
-    ContactComponent,
     GoToTopComponent,
     PrivacyPolicyComponent,
     PopupComponent
@@ -68,7 +60,7 @@ const routes: Routes = [
       anchorScrolling: 'enabled'
     })
   ],
-  providers: [MessageService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
