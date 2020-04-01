@@ -1,27 +1,7 @@
 # EloquentEnglish
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
+This project was created using Angular. It is the source code for my website. The website is about my books - Become a Master of English IPA and Become an Eloquent English Speaker - where one can read the content of the book for free.
 
-## Development server
+To make sure that you enjoy the reading experience, I coded the platform in a beautiful UI (just like it looks on the actual book) and UX responsive to any screen size. So whether you are reading from a mobile phone, tablet or laptop, you can be sure to get a good reading experience.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+More features and sections will be added to the web app later. Thanks for using this platform.
