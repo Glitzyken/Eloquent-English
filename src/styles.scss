@@ -13,6 +13,7 @@ html {
   font-size: 62.5%;
   font-family: 'Amiri', Arial, Helvetica, sans-serif;
   line-height: 2.1rem;
+  scroll-behavior: smooth;
 
   @include respond(tab-land) {
     font-size: 56.25%;
